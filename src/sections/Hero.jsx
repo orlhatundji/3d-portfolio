@@ -81,12 +81,12 @@ const Hero = () => {
               isMobile={isMobile}
             />
            </HeroCamera>
-            <group>
-              {/* <Cube position={sizes.cubePosition} /> */}
-              {/* <ReactLogo position={sizes.reactLogoPosition} /> */}
-              {/* <Target position={sizes.targetPosition} /> */}
-              {/* <Rings position={sizes.ringPosition} /> */}
-            </group>
+            {/* <group>
+              <Cube position={sizes.cubePosition} />
+              <ReactLogo position={sizes.reactLogoPosition} />
+              <Target position={sizes.targetPosition} />
+              <Rings position={sizes.ringPosition} />
+            </group> */}
             <ambientLight intensity={1} />
             <directionalLight position={[10, 10, 10]} intensity={0.5} />
           </Suspense>
