@@ -15,11 +15,14 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+    console.log(
+      import.meta.env.VITE_REACT_APP_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_REACT_APP_EMAILJS_TEMPLATE_ID
+    );
     try {
-      // TODO: Replace with your own service ID and template ID
       await emailjs.send(
-        "service_7q5h7bq",
-        "template_8z7q1z6",
+        import.meta.env.VITE_REACT_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_REACT_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
           to_name: "Simon",
@@ -27,7 +30,7 @@ const Contact = () => {
           to_email: "orlhatundji@gmail.com",
           message: form.message,
         },
-        "user_3dJd6z1z1V2G4Zz9J6"
+        import.meta.env.VITE_REACT_APP_EMAILJS_API_KEY
       );
 
       setLoading(false);
@@ -37,7 +40,6 @@ const Contact = () => {
         email: "",
         message: "",
       });
-
     } catch (error) {
       setLoading(false);
       console.log(error);

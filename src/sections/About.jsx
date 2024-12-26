@@ -24,8 +24,8 @@ const About = () => {
             <div className="">
               <p className="grid-headtext">Hi, I'm Simon</p>
               <p className="grid-subtext">
-                With 4 years of experience I have honed my sills in frontend,
-                backend and a little bit of mobile development, with a focus on
+                With 4 years of experience in frontend,
+                backend and some mobile development, with a focus on
                 React, Nodejs and React Native.
               </p>
             </div>

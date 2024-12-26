@@ -8,10 +8,10 @@ import { useMediaQuery } from "react-responsive";
 import { calculateSizes } from "../constants";
 import CanvasLoader from "../components/CanvasLoader";
 import HackerRoom from "../components/HackerRoom";
-import Target from "../components/Target";
-import ReactLogo from "../components/ReactLogo";
-import Cube from "../components/Cube";
-import Rings from "../components/Rings";
+// import Target from "../components/Target";
+// import ReactLogo from "../components/ReactLogo";
+// import Cube from "../components/Cube";
+// import Rings from "../components/Rings";
 import HeroCamera from "../components/HeroCamera";
 import Button from "../components/Button";
 
@@ -65,7 +65,7 @@ const Hero = () => {
           Hi, I am Simon <span className="waving-hand">👋🏾</span>
         </p>
         <p className="hero_tag text-gray_gradient">
-          I am a Fullstack Developer
+          I am a Fullstack Engineer
         </p>
       </div>
       <div className="absolute w-full h-full flex inset-0">
@@ -93,7 +93,7 @@ const Hero = () => {
         </Canvas>
       </div>
       <div className="absolute bottom-7 left-o right-0 w-full z-10 c-space">
-        <a href="#about" classname="w-fit">
+        <a href="#about" className="w-fit">
           <Button name="Let's work together" isBeam containerClass="sm:w-fit w-full sm:min-w-96" />
         </a>
       </div>
