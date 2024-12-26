@@ -16,8 +16,8 @@ const Testimonials = () => {
                     className="w-12 h-12 rounded-full"
                   />
                   <div className="flex flex-col">
-                    <p className="font-semibold">{name}</p>
-                    <p className="text-white-500 md:text-base text-sm">
+                    <p className="font-semibold text-white-800">{name}</p>
+                    <p className="text-white-500 md:text-base text-sm font-light">
                       {position}
                     </p>
                   </div>
