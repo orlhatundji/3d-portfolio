@@ -24,36 +24,20 @@ export const navLinks = [
 export const clientReviews = [
   {
     id: 1,
-    name: 'Emily Johnson',
-    position: 'Marketing Director at GreenLeaf',
-    img: 'assets/review1.png',
-    review:
-      'Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
-  },
-  {
-    id: 2,
-    name: 'Mark Rogers',
-    position: 'Founder of TechGear Shop',
-    img: 'assets/review2.png',
-    review:
-      'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
-  },
-  {
-    id: 3,
-    name: 'John Dohsas',
-    position: 'Project Manager at UrbanTech ',
-    img: 'assets/review3.png',
-    review:
-      'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
-  },
-  {
-    id: 4,
-    name: 'Ether Smith',
-    position: 'CEO of BrightStar Enterprises',
-    img: 'assets/review4.png',
-    review:
-      'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
-  },
+    name: 'Joseph Godwin',
+    position: 'Software engineer at SQUIRE',
+    img: 'assets/joseph.jpeg',
+    rating: 5,
+    review: `
+      Simon is an exceptional Software Engineer. 
+      Having collaborated with him on multiple software development projects, 
+      I’ve consistently been impressed by his strong expertise in 
+      both frontend and backend development of large scale systems. 
+      This, combined with his resourcefulness, excellent teamwork 
+      and problem-solving skills, makes him an invaluable asset to any engineering team. 
+      It’s always a pleasure working with him, and I highly recommend.
+    `
+  }
 ];
 
 export const myProjects = [

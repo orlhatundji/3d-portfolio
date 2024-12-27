@@ -4,7 +4,7 @@ const Testimonials = () => {
     <section className="c-space my-20">
       <h3 className="head-text">Hear from people I have worked with</h3>
       <div className="client-container">
-        {clientReviews.map(({ id, name, review, img, position }) => (
+        {clientReviews.map(({ id, name, review, img, position, rating }) => (
           <div key={id} className="client-review">
             <div className="">
               <p className="text-white font-light">{review}</p>
@@ -28,7 +28,7 @@ const Testimonials = () => {
                       key={i}
                       xmlns="http://www.w3.org/2000/svg"
                       className={`h-5 w-5 ${
-                        i < 4 ? "text-yellow-400" : "text-gray-400"
+                        i < rating ? "text-yellow-400" : "text-gray-400"
                       }`}
                       fill="none"
                       viewBox="0 0 24 24"
