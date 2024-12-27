@@ -244,29 +244,159 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
-    name: 'Framer',
-    pos: 'Lead Web Developer',
-    duration: '2022 - Present',
-    title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-    icon: '/assets/framer.svg',
+    name: 'Graff Systems',
+    pos: 'Full Stack Engineer',
+    duration: '2024 - Present',
+    title: `As a full-stack engineer at Graff Systems, I work on a wide range of projects, 
+        from building fullstack school management portal to varieties of client websites. 
+        I used technologies such as React.js, Next.js, Framer Motion, Tailwindcss, Node.js, Nest.js, and databases like PostgreSQL 
+        and MongoDB to create scalable and performant applications.
+    `,
+    technologies: [
+      {
+        id: 2,
+        name: 'Next.js',
+      },
+      {
+        id: 3,
+        name: 'Framer Motion',
+      },
+      {
+        id: 4,
+        name: 'Tailwind CSS',
+      },
+      {
+        id: 6,
+        name: 'Nest.js',
+      },
+      {
+        id: 7,
+        name: 'PostgreSQL',
+      },
+      {
+        id: 8,
+        name: 'MongoDB',
+      },
+    ],
+    icon: '/assets/graff_logo.jpeg',
     animation: 'victory',
   },
   {
     id: 2,
-    name: 'Figma',
-    pos: 'Web Developer',
-    duration: '2020 - 2022',
-    title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-    icon: '/assets/figma.svg',
+    name: 'Trudenty',
+    pos: 'Frontend Developer',
+    duration: '2022 - 2024',
+    title: `At Trudenty, I worked as a frontend developer, 
+        building pixel-perfect user interfaces and a b2b web application that served businesses in the
+        identity verification space. The application enabled them to customize their verification process,
+        view analytics, and manage their users. 
+        I also utilized Docusaurus to create an engaging product documentation site.
+    `,
+    technologies: [
+      {
+        id: 1,
+        name: 'React.js',
+      },
+      {
+        id: 2,
+        name: 'Tailwind CSS',
+      },
+      {
+        id: 3,
+        name: 'Gatsby.js',
+      },
+      {
+        id: 4,
+        name: 'Docusaurus',
+      },
+      {
+        id: 5,
+        name: 'RTK Query',
+      },
+
+    ],
+    icon: '/assets/trudenty_logo.jpeg',
     animation: 'clapping',
   },
   {
     id: 3,
-    name: 'Notion',
-    pos: 'Junior Web Developer',
-    duration: '2019 - 2020',
-    title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    icon: '/assets/notion.svg',
+    name: 'Konnected',
+    pos: 'Frontend Developer',
+    duration: '2022 - 2022',
+    title: `At Konnected, I worked as a frontend developer, 
+        building an SEO friendly web application with Next.js that featured audio recording, 
+        transcript generation, audio sharing with embedded social links.
+    `,
+    technologies: [
+      {
+        id: 1,
+        name: 'Next.js',
+      },
+      {
+        id: 2,
+        name: 'Tailwind CSS',
+      },
+      {
+        id: 3,
+        name: 'RTK Query',
+      }
+    ],
+    icon: '/assets/feelkonnected_logo.jpeg',
     animation: 'salute',
+  },
+  {
+    id: 4,
+    name: 'Kiddiebox',
+    pos: 'Frontend Developer',
+    duration: '2022 - 2022',
+    title: `At Kiddiebox, I worked as a frontend developer,
+        revamping and managing a childcare management application for childcare providers and parents. 
+    `,
+    technologies: [
+      {
+        id: 1,
+        name: 'React.js',
+      },
+      {
+        id: 2,
+        name: 'CSS',
+      },
+      {
+        id: 3,
+        name: 'Redux',
+      }
+    ],
+    icon: '/assets/getkiddiebox_logo.jpeg',
+    animation: 'idle',
+  },
+  {
+    id: 5,
+    name: 'Z-Softbase Software Solutions',
+    pos: 'Full Stack Engineer',
+    duration: '2020 - 2021',
+    title: `
+      At Z-Softbase Software Solutions, I worked as a fullstack engineer,
+      building a school management portal that enabled schools to manage their students, teachers, and subjects.
+    `,
+    technologies: [
+      {
+        id: 1,
+        name: 'React.js',
+      },
+      {
+        id: 2,
+        name: 'React Native',
+      },
+      {
+        id: 3,
+        name: 'Express.js',
+      },
+      {
+        id: 4,
+        name: 'MongoDB',
+      } 
+    ],
+    icon: 'https://www.placeholder.com/150',
+    animation: 'idle',
   },
 ];

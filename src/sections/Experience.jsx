@@ -26,7 +26,7 @@ const Experience = () => {
           <div className="work-content">
             <div className="sm:py-10 py-5 sm:px-5 px-2.5">
               {workExperiences.map(
-                ({ id, name, pos, icon, duration, title, animation }) => (
+                ({ id, name, pos, icon, duration, title, technologies, animation }) => (
                   <div key={id} className="work-content_container group" 
                   onClick={() => setAnimationName(animation.toLowerCase())}
                   onPointerOver={() => setAnimationName(animation.toLowerCase())}
@@ -34,7 +34,7 @@ const Experience = () => {
                   >
                     <div className="flex flex-col h-ful justify-start items-center py-2">
                       <div className="work-content_logo">
-                        <img src={icon} alt="logo" className="w-full h-full" />
+                        <img src={icon} alt="logo" className="w-full h-full animate-pulse" />
                       </div>
                       <div className="work-content_bar" />
                     </div>
@@ -47,6 +47,13 @@ const Experience = () => {
                       <p className="group-hover:text-white transition ease-in-out duration-500">
                         {title}
                       </p>
+                      <div className="mt-4 flex gap-1 flex-wrap">
+                        {technologies.map(({id, name}, index) => (
+                          <span key={id} className={`py-0.5 px-1 rounded text-xs ${index % 2 === 0 ? "bg-white-800 text-black" : "bg-white-500 text-white-700"}`}>
+                            {name}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 )
