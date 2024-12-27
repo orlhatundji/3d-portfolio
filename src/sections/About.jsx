@@ -24,9 +24,8 @@ const About = () => {
             <div className="">
               <p className="grid-headtext">Hi, I'm Simon</p>
               <p className="grid-subtext">
-                With 4 years of experience in frontend,
-                backend and some mobile development, with a focus on
-                React, Nodejs and React Native.
+                With 4 years of experience in frontend, backend and some mobile
+                development, with a focus on React, Nodejs and React Native.
               </p>
             </div>
           </div>
@@ -81,7 +80,11 @@ const About = () => {
                 opportunities.
               </p>
               <a href="#contact">
-              <Button name="Contact me" isBeam containerClass="w-full mt-10" />
+                <Button
+                  name="Contact me"
+                  isBeam
+                  containerClass="w-full mt-10"
+                />
               </a>
             </div>
           </div>

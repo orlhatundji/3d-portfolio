@@ -3,10 +3,8 @@ import React from "react";
 const Footer = () => {
   return (
     <section className="c-space pt-7 pb-3 border-t border-black-300 flex justify-between items-center flex-wrap gap-5">
-      <div className="text-white-500 flex gap-2">
-        <p>© 2022 Simon Olatunji</p>
-        <p className="text-white-300">|</p>
-        <p>Privacy Policy</p>
+      <div className="text-white-500 text-sm flex justify-between gap-2">
+        <p className="">© 2022 Simon Olatunji</p>
         <p className="text-white-300">|</p>
         <p>All Rights Reserved</p>
       </div>
