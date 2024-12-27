@@ -62,10 +62,10 @@ const Hero = () => {
     <section className="min-h-screen p-1 w-full flex flex-col relative" id="hero">
       <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
         <p className="sm:text-3xl text-2xl font-medium text-white text-center font-generalsans">
-          Hi, I am Simon <span className="waving-hand">👋🏾</span>
+          Hello, welcome to my space <span className="waving-hand">👋🏾</span>
         </p>
         <p className="hero_tag text-gray_gradient">
-          I am a Fullstack Engineer
+          I am a fullstack engineer.
         </p>
       </div>
       <div className="absolute w-full h-full flex inset-0">
