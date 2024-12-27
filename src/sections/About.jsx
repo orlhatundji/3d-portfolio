@@ -80,7 +80,9 @@ const About = () => {
                 across the globe. I am available for hire and I am open to new
                 opportunities.
               </p>
+              <a href="#contact">
               <Button name="Contact me" isBeam containerClass="w-full mt-10" />
+              </a>
             </div>
           </div>
         </div>
