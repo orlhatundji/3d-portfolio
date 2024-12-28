@@ -6,6 +6,7 @@
   height: 100vh;
   overflow: hidden;
 }
+
 #blocks {
   width: 105vw;
   height: 100vh;
@@ -33,14 +34,11 @@
   }
 }
 :root {
-  --color-block-border: #a51eca1e;
-  --color-block-highlight: #7727bd;
+  --color-block-border: #501f5d1e;
+  --color-block-highlight: #31144a;
   --color-block-highlight-hover: #910707;
 }
-body,
-* {
-  z-index: 99999;
-}
+
 .dark {
   --color-block-border: #ffffff13;
   --color-block-highlight: #868f0b;
