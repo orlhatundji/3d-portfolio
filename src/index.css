@@ -195,10 +195,3 @@ body {
     transform: rotate(0deg);
   }
 }
-div:not(.block, #root, .blocks-container)  {
-  z-index: 9;
-}
-
-header {
-  z-index: 999;
-}

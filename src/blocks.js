@@ -1,5 +1,5 @@
 
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
   const blockContainer = document.getElementById("blocks");
   const blockSize = 50;
   const screenWidth = window.innerWidth;

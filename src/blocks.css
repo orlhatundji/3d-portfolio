@@ -15,14 +15,12 @@
   justify-content: flex-start;
   align-content: flex-start;
   overflow: hidden;
-  z-index: -1;
 }
 .block {
   width: 50px;
   height: 50px;
   border: 0.5px solid var(--color-block-border);
   transition: border 0.3s ease;
-  z-index: 1;
 }
 .highlight {
   border: 0.5px solid var(--color-block-highlight);
@@ -43,4 +41,12 @@
   --color-block-border: #ffffff13;
   --color-block-highlight: #868f0b;
   --color-block-highlight-hover: #cfdd11;
+}
+
+div:not(.block, #root, .blocks-container)  {
+  z-index: 9;
+}
+
+header {
+  z-index: 999;
 }
