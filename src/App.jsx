@@ -9,6 +9,8 @@ import Testimonials from './sections/Testimonials'
 
 const App = () => {
   return (
+    <>
+     
     <main className='max-w-7xl mx-auto'>
       <Navbar />
       <Hero />
@@ -19,6 +21,7 @@ const App = () => {
       <Contact />
       <Footer />
     </main>
+    </>
   )
 }
 
