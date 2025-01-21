@@ -388,7 +388,7 @@ export const workExperiences = [
         name: "MongoDB",
       },
     ],
-    icon: "https://www.placeholder.com/150",
+    icon: "https://placehold.co/400x400",
     animation: "idle",
   },
 ];

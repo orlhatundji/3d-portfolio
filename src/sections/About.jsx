@@ -1,5 +1,4 @@
 import React from "react";
-import Globe from "react-globe.gl";
 import Button from "../components/Button";
 
 const About = () => {
@@ -49,26 +48,11 @@ const About = () => {
         </div>
         <div className="col-span-1 xl:row-span-4">
           <div className="grid-container">
-            <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
-              <Globe
-                height={326}
-                width={326}
-                backgroundColor="rgba(0,0,0,0)"
-                backgroundImage={0.5}
-                showAtmosphere
-                showGraticules
-                globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
-                bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-                labelsData={[
-                  {
-                    lat: 6.2718,
-                    lng: 3.2303,
-                    text: "I am here",
-                    color: "white",
-                    size: 20,
-                  },
-                ]}
-              />
+            <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center py-10">
+              <span className="relative h-8 w-8 flex justify-center items-center">
+                <span className="btn-ping !h-7 !w-7 !bg-purple-600" />
+                <span className="btn-ping_dot !h-7 !w-7 !bg-purple-600" />
+              </span>
             </div>
             <div className="">
               <p className="grid-headtext">
@@ -98,9 +82,10 @@ const About = () => {
             <div className="">
               <p className="grid-headtext">My knack for coding</p>
               <p className="grid-subtext">
-                I am passionate about software engineering and I love to build applications
-                that solve real world problems. I enjoy teaching as much as I enjoy learning.
-                I am on a journey to becoming a world-class sought after engineer.
+                I am passionate about software engineering and I love to build
+                applications that solve real world problems. I enjoy teaching as
+                much as I enjoy learning. I am on a journey to becoming a
+                world-class sought after engineer.
               </p>
             </div>
           </div>
@@ -124,26 +109,26 @@ const About = () => {
                 </p>
               </div>
             </div>
-              <div className="flex gap-2 justify-center">
-                <a href="https://www.github.com/orlhatundji">
-                  <div className="social-icon">
-                    <img
-                      src="/assets/github.svg"
-                      alt="github"
-                      className="w-1/2 h-1/2"
-                    />
-                  </div>
-                </a>
-                <a href="https://www.linkedin.com/in/orlhatundji">
-                  <div className="social-icon">
-                    <img
-                      src="/assets/linkedin.svg"
-                      alt="github"
-                      className="w-1/2 h-1/2"
-                    />
-                  </div>
-                </a>
-              </div>
+            <div className="flex gap-2 justify-center">
+              <a href="https://www.github.com/orlhatundji">
+                <div className="social-icon">
+                  <img
+                    src="/assets/github.svg"
+                    alt="github"
+                    className="w-1/2 h-1/2"
+                  />
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/orlhatundji">
+                <div className="social-icon">
+                  <img
+                    src="/assets/linkedin.svg"
+                    alt="github"
+                    className="w-1/2 h-1/2"
+                  />
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
