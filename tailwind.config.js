@@ -25,6 +25,7 @@ export default {
       },
       backgroundImage: {
         terminal: "url('/assets/terminal.png')",
+        city: "url('/assets/city.png')",
       },
     },
   },

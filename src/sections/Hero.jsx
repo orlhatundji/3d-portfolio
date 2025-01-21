@@ -1,19 +1,11 @@
-import { Canvas } from "@react-three/fiber";
-// import { Leva, useControls } from "leva";
-import { PerspectiveCamera } from "@react-three/drei";
-import { Suspense } from "react";
+import { Suspense, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 
 // Components
 import { calculateSizes } from "../constants";
 import CanvasLoader from "../components/CanvasLoader";
-import HackerRoom from "../components/HackerRoom";
-// import Target from "../components/Target";
-// import ReactLogo from "../components/ReactLogo";
-// import Cube from "../components/Cube";
-// import Rings from "../components/Rings";
-import HeroCamera from "../components/HeroCamera";
 import Button from "../components/Button";
+import gsap from "gsap";
 
 const Hero = () => {
   // const controls = useControls("HackerRoom", {
@@ -58,9 +50,28 @@ const Hero = () => {
   const isTablet = useMediaQuery({ maxWidth: 1024 });
 
   const sizes = calculateSizes(isSmall, isMobile, isTablet);
+  useEffect(() => {
+    gsap.to(".cyclist", {
+      x: "100vw",
+      duration: 30,
+      repeat: -1,
+      ease: "linear",
+    });
+
+    gsap.to(".car", {
+      x: "100vw",
+      duration: 10,
+      repeat: -1,
+      ease: "linear",
+    });
+  }, []);
+
   return (
-    <section className="min-h-[calc(max(820px,100vh))] p-1 w-full flex flex-col relative" id="hero">
-      <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
+    <section
+      className="min-h-[calc(max(820px,100vh))] p-1 w-full flex flex-col relative"
+      id="hero"
+    >
+      <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3 flex-1">
         <p className="sm:text-3xl text-2xl font-medium text-white text-center font-generalsans">
           Hello, welcome to my space <span className="waving-hand">👋🏾</span>
         </p>
@@ -68,33 +79,28 @@ const Hero = () => {
           I am a fullstack engineer.
         </p>
       </div>
-      <div className="absolute w-full h-full flex inset-0">
-        {/* <Leva /> */}
-        <Canvas className="w-full h-full">
-          <Suspense fallback={<CanvasLoader />}>
-            <PerspectiveCamera makeDefault position={[0, 0, 20]} />
-           <HeroCamera>
-           <HackerRoom
-              scale={sizes.deskScale}
-              rotation={[0, -Math.PI, 0]}
-              position={sizes.deskPosition}
-              isMobile={isMobile}
-            />
-           </HeroCamera>
-            {/* <group>
-              <Cube position={sizes.cubePosition} />
-              <ReactLogo position={sizes.reactLogoPosition} />
-              <Target position={sizes.targetPosition} />
-              <Rings position={sizes.ringPosition} />
-            </group> */}
-            <ambientLight intensity={1} />
-            <directionalLight position={[10, 10, 10]} intensity={0.5} />
-          </Suspense>
-        </Canvas>
-      </div>
+      <Suspense fallback={<CanvasLoader />}>
+        <div className="relative pt-80 overflow-hidden mb-56 bg-city bg-cover bg-no-repeat">
+          {/* <img src="/assets/city.png" alt="city" className="object-cover bg-repeat-x" /> */}
+          <img
+            src="/assets/volkswagen.gif"
+            alt="car"
+            className="car absolute -bottom-10 h-48"
+          />
+          <img
+            src="/assets/cyclist.gif"
+            alt="cyclist"
+            className="cyclist absolute bottom-0 h-20"
+          />
+        </div>
+      </Suspense>
       <div className="absolute bottom-7 left-o right-0 w-full z-10 c-space">
         <a href="#about" className="w-fit">
-          <Button name="Let's work together" isBeam containerClass="sm:w-fit w-full sm:min-w-96" />
+          <Button
+            name="Let's work together"
+            isBeam
+            containerClass="sm:w-fit w-full sm:min-w-96"
+          />
         </a>
       </div>
     </section>
