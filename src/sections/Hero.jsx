@@ -80,22 +80,20 @@ const Hero = () => {
           I am a fullstack engineer.
         </p>
       </div> */}
-      <BackgroundBeamsWithCollision className="flex-1 flex flex-col justify-center">
+      {/* <BackgroundBeamsWithCollision className="flex-1 flex flex-col justify-center max-w-[100vw]"> */}
         <div className="flex-1" />
-        <Suspense fallback={<CanvasLoader />}>
-          <div className="relative pt-80 overflow-hidden mb-56 bg-city bg-cover bg-no-repeat">
-            <img
-              src="/assets/volkswagen.gif"
-              alt="car"
-              className="car absolute -left-80 -bottom-[2vw] h-[25vw] max-h-48"
-            />
-            <img
-              src="/assets/cyclist.gif"
-              alt="cyclist"
-              className="cyclist absolute -left-20 bottom-0 h-[10vw] max-h-20"
-            />
-          </div>
-        </Suspense>
+        <div className="relative pt-80 overflow-hidden mb-56 bg-city bg-cover bg-no-repeat">
+          <img
+            src="/assets/volkswagen.gif"
+            alt="car"
+            className="car absolute -left-80 -bottom-[2vw] h-[25vw] max-h-48"
+          />
+          <img
+            src="/assets/cyclist.gif"
+            alt="cyclist"
+            className="cyclist absolute -left-20 bottom-0 h-[10vw] max-h-20"
+          />
+        </div>
         <div className="absolute bottom-7 left-o right-0 w-full z-10 c-space">
           <a href="#about" className="w-fit">
             <Button
@@ -106,7 +104,7 @@ const Hero = () => {
           </a>
         </div>
         <div className="flex-1" />
-      </BackgroundBeamsWithCollision>
+      {/* </BackgroundBeamsWithCollision> */}
     </section>
   );
 };
