@@ -60,8 +60,8 @@ const Hero = () => {
     });
 
     gsap.to(".car", {
-      x: "100vw",
-      duration: 10,
+      x: "200vw",
+      duration: 15,
       repeat: -1,
       ease: "linear",
     });

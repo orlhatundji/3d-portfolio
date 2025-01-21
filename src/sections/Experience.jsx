@@ -78,13 +78,13 @@ const Experience = () => {
             </div>
           </div>
           <div className="relative h-full overflow-hidden text-white">
-            <Vortex
+            {/* <Vortex
               backgroundColor="black"
               rangeY={800}
               particleCount={250}
               baseHue={baseHue}
               className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
-            />
+            /> */}
             {/* <Canvas>
               <ambientLight intensity={7} />
               <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
