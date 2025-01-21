@@ -87,12 +87,12 @@ const Hero = () => {
             <img
               src="/assets/volkswagen.gif"
               alt="car"
-              className="car absolute -bottom-[2vw] h-[25vw] max-h-48"
+              className="car absolute -left-80 -bottom-[2vw] h-[25vw] max-h-48"
             />
             <img
               src="/assets/cyclist.gif"
               alt="cyclist"
-              className="cyclist absolute bottom-0 h-[10vw] max-h-20"
+              className="cyclist absolute -left-20 bottom-0 h-[10vw] max-h-20"
             />
           </div>
         </Suspense>
