@@ -69,7 +69,7 @@ const Hero = () => {
 
   return (
     <section
-      className="min-h-[calc(max(820px,100vh))] p-1 w-full flex flex-col relative"
+      className="min-h-[calc(min(820px,100vh))] lg:min-h-[calc(max(820px,100vh))] p-1 w-full flex flex-col relative"
       id="hero"
     >
       {/* <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3 flex-1">
@@ -82,7 +82,7 @@ const Hero = () => {
       </div> */}
       {/* <BackgroundBeamsWithCollision className="flex-1 flex flex-col justify-center max-w-[100vw]"> */}
         <div className="flex-1" />
-        <div className="relative pt-80 overflow-hidden mb-56 bg-city bg-cover bg-no-repeat">
+        <div className="relative pt-80 overflow-hidden mb- bg-city bg-cover bg-no-repeat">
           <img
             src="/assets/volkswagen.gif"
             alt="car"
@@ -94,7 +94,8 @@ const Hero = () => {
             className="cyclist absolute -left-20 bottom-0 h-[10vw] max-h-20"
           />
         </div>
-        <div className="absolute bottom-7 left-o right-0 w-full z-10 c-space">
+            <div className="flex-1" />
+        <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
           <a href="#about" className="w-fit">
             <Button
               name="Let's work together"
@@ -103,7 +104,6 @@ const Hero = () => {
             />
           </a>
         </div>
-        <div className="flex-1" />
       {/* </BackgroundBeamsWithCollision> */}
     </section>
   );
