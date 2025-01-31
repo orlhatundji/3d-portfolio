@@ -42,13 +42,45 @@ export const clientReviews = [
 
 export const myProjects = [
   {
+    title: "Software development agency",
+    desc: `Graff Systems is the ideal solution for businesses of all sizes, from startups seeking to rapidly scale their technology to enterprises looking to optimise their software development processes. We are a dedicated team of technology innovators committed to helping organizations modernize their infrastructures and harness the power of data-driven insights. With years of industry experience, we’re passionate about delivering custom solutions that are secure, scalable, and future-proof.`,
+    subdesc: `Built with Next.js, TailwindCSS, Schadcn, the Entrepreneurship and Skill Development Center
+    website is a platform that showcases the center's activities, programs, and events.`,
+    href: "https://www.graffsystems.co/",
+    texture: "/textures/project/project1.mp4",
+    logo: "/assets/graff-logo.svg",
+    logoStyle: {
+      backgroundColor: "#2A1816",
+      border: "0.2px solid #36201D",
+      boxShadow: "0px 0px 60px 0px #AA3C304D",
+    },
+    spotlight: "/assets/spotlight1.png",
+    tags: [
+      {
+        id: 1,
+        name: "Next.js",
+        path: "/assets/nextjs.svg",
+      },
+      {
+        id: 2,
+        name: "TailwindCSS",
+        path: "assets/tailwindcss.png",
+      },
+      {
+        id: 3,
+        name: "TypeScript",
+        path: "/assets/typescript.png",
+      },
+    ],
+  },
+  {
     title: "Entrepreneurship and Skill Development Center",
     desc: `University of Lagos has one of the oldest Business Faculties in Africa established 
     in 1962 and has produced numerous Entrepreneurs who are captains of industries in many 
     sectors of the Nigerian economy and Africa.`,
     subdesc: `Built with Next.js, TailwindCSS, and Framer Motion, the Entrepreneurship and Skill Development Center
     website is a platform that showcases the center's activities, programs, and events.`,
-    href: "#",
+    href: "https://esdc-unilag.onrender.com/",
     texture: "/textures/project/project1.mp4",
     logo: "/assets/project-logo1.png",
     logoStyle: {
@@ -163,8 +195,7 @@ export const myProjects = [
   {
     title: "KardNode - Credit card for developers",
     desc: `kardNode is a special credit card made for developers. It offers a wide range of benefits, including cashback on purchases,`,
-    subdesc:
-      `KardNode is a pet project I built with Nextjs to showcase my frontend skills.`,
+    subdesc: `KardNode is a pet project I built with Nextjs to showcase my frontend skills.`,
     href: "https://kardnode.netlify.app",
     texture: "/textures/project/project4.mp4",
     logo: "/assets/project-logo4.png",
@@ -271,7 +302,7 @@ export const workExperiences = [
         name: "MongoDB",
       },
     ],
-    icon: "/assets/graff_logo.jpeg",
+    icon: "/assets/graff-logo.svg",
     animation: "victory",
   },
   {
