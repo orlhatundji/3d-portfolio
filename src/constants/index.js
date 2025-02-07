@@ -47,11 +47,11 @@ export const myProjects = [
     subdesc: `Built with Next.js, TailwindCSS, Schadcn, the Entrepreneurship and Skill Development Center
     website is a platform that showcases the center's activities, programs, and events.`,
     href: "https://www.graffsystems.co/",
-    texture: "/textures/project/project1.mp4",
+    texture: "/textures/project/graff.webm",
     logo: "/assets/graff-logo.svg",
     logoStyle: {
-      backgroundColor: "#2A1816",
-      border: "0.2px solid #36201D",
+      backgroundColor: "#001427",
+      border: "0.2px solid #E0FF88",
       boxShadow: "0px 0px 60px 0px #AA3C304D",
     },
     spotlight: "/assets/spotlight1.png",
@@ -81,7 +81,7 @@ export const myProjects = [
     subdesc: `Built with Next.js, TailwindCSS, and Framer Motion, the Entrepreneurship and Skill Development Center
     website is a platform that showcases the center's activities, programs, and events.`,
     href: "https://esdc-unilag.onrender.com/",
-    texture: "/textures/project/project1.mp4",
+    texture: "/textures/project/project1.webm",
     logo: "/assets/project-logo1.png",
     logoStyle: {
       backgroundColor: "#2A1816",
@@ -121,7 +121,7 @@ export const myProjects = [
       Built with Gatsby.js, TailwindCSS, and Framer Motion, the Ololade Ayelabola website is a platform that showcases Ololade's journey, achievements, and philanthropic work.
     `,
     href: "https://www.ololadeayelabola.ng",
-    texture: "/textures/project/project2.mp4",
+    texture: "/textures/project/project2.webm",
     logo: "/assets/project-logo2.png",
     logoStyle: {
       backgroundColor: "#13202F",
@@ -159,7 +159,7 @@ export const myProjects = [
       requested from users.`,
     subdesc: `Dutiful is a pet project I built with Next.js, TailwindCSS, and Framer Motion, Dutiful is a platform that helps businesses grow by collecting reviews and ratings from customers.`,
     href: "https://dutiful-app.netlify.app/",
-    texture: "/textures/project/project3.mp4",
+    texture: "/textures/project/project3.webm",
     logo: "/assets/project-logo3.png",
     logoStyle: {
       backgroundColor: "#a27fbe",
@@ -197,7 +197,7 @@ export const myProjects = [
     desc: `kardNode is a special credit card made for developers. It offers a wide range of benefits, including cashback on purchases,`,
     subdesc: `KardNode is a pet project I built with Nextjs to showcase my frontend skills.`,
     href: "https://kardnode.netlify.app",
-    texture: "/textures/project/project4.mp4",
+    texture: "/textures/project/project4.webm",
     logo: "/assets/project-logo4.png",
     logoStyle: {
       backgroundColor: "#0E1F38",
