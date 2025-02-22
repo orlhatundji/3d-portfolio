@@ -4,7 +4,7 @@ import Button from "../components/Button";
 const About = () => {
   const [hasCopied, setHasCopied] = React.useState(false);
   const handleCopy = () => {
-    navigator.clipboard.writeText("orlhatundji@gmail.com");
+    navigator.clipboard.writeText("simonolatunjib@gmail.com");
     setHasCopied(true);
     setTimeout(() => {
       setHasCopied(false);
@@ -105,7 +105,7 @@ const About = () => {
                   alt="copy"
                 />
                 <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">
-                  orlhatundji@gmail.com
+                  simonolatunjib@gmail.com
                 </p>
               </div>
             </div>
